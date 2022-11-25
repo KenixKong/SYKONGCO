@@ -31,7 +31,7 @@ def home():
             connection.sendmail(
                 from_addr=email,
                 to_addrs=email,
-                msg=f"Subject:SY MANAGEMENT\n\nCustomer Name:{cust_name}\nCustomer Email:{cust_email}\nMessage:{cust_message} "
+                msg=f"Subject:SY MANAGEMENT\n\nCustomer Name:{cust_name}\nCustomer Email: {cust_email}\nMessage:{cust_message} "
 
             )
             return redirect(url_for('home'))
